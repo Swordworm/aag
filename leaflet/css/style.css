@@ -1,0 +1,122 @@
+body {
+    font-family:'RobotoMono', Times, serif;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: unset;
+    color: unset;
+}
+h4 {
+    color: #379e37;
+}
+.wrapper {
+    padding: 50px 0;
+}
+.wrapper-header {
+    padding: 40px 0 20px;
+    background: #000;
+    color: #fff;
+}
+.header-left {
+    padding-top: 20px;
+}
+.logo h1 {
+    font-family: 'RoadRage';
+    font-size: 85px;
+}
+.logo p {
+    font-size: 13px;
+}
+.intro h4 {
+    font-size: 35px;
+}
+.intro p {
+    font-size: 14px;
+}
+.background-routes-activities {
+    background:  #122a0d;
+}
+.routes-activities .left-content {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+}
+.wrapper-routes-activities {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+.routes-activities .forest-image {
+    opacity: 0.6;
+    transition: all 0.2s ease-in-out;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/background-forest.png) center no-repeat;
+    cursor: pointer;
+}
+.equipment-background {
+    background: url(../img/background-foggy-forest.png) center no-repeat;
+}
+.equipment-filter-blue {
+    background: rgba(24, 45, 58, 0.65);
+}
+.equipment .left-content {
+    background: url(../img/equipment.png) center no-repeat;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+.equipment .center-content {
+    color: #d6d6d6;
+}
+.equipment .wrapper-equipment {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+.equipment .right-content {
+    background: url(../img/team.png) center no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+footer {
+    color: #fff;
+}
+footer .background-footer {
+    background: #000;
+}
+footer .wrapper {
+    padding: 10px 0;
+}
+footer .footer-text-wrapper {
+    display: flex;
+    justify-content: center;
+}
+footer p {
+    background: rgba(100, 100, 100, 0.5);
+    margin: 0;
+    border-radius: 30px;
+    padding: 10px 40px;
+}
+
+@font-face {
+    font-family: 'RoadRage';
+    src: url('../fonts/road-rage/RoadRage.otf') format('otf'),
+        url('../fonts/road-rage/RoadRage.eot') format('eot'),
+        url('../fonts/road-rage/RoadRage.svg') format('svg'),
+        url('../fonts/road-rage/RoadRage.ttf') format('ttf'),
+        url('../fonts/road-rage/RoadRage.woff') format('woff'),
+        url('../fonts/road-rage/RoadRage.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/roboto-mono/RobotoMono-VariableFont_wght.otf') format('otf'),
+        url('../fonts/roboto-mono/RobotoMono-VariableFont_wght.eot') format('eot'),
+        url('../fonts/roboto-mono/RobotoMono-VariableFont_wght.svg') format('svg'),
+        url('../fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf') format('ttf'),
+        url('../fonts/roboto-mono/RobotoMono-VariableFont_wght.woff') format('woff'),
+        url('../fonts/roboto-mono/RobotoMono-VariableFont_wght.woff2') format('woff2');
+}
