@@ -1,0 +1,132 @@
+$red-color: #ffad9e;
+$blue-color: #83eaff;
+
+@mixin red-background() {
+    background: $red-color;
+}
+@mixin blue-background() {
+    background: $blue-color;
+}
+@mixin content-pad($pad-top-bot, $pad-right-left) {
+    padding: $pad-top-bot $pad-right-left;
+}
+
+%padding-footer-blocks {
+    padding: 15px 30px;
+}
+%content {
+    background: #ffe4a1;
+    font-size: 21px;
+}
+%content-right-animation {
+    transition: all 0.3s linear;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        color: #919191;
+        text-decoration: none;
+    }
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.header-wrapper {
+    .left-header {
+        @include red-background();
+        .menu {
+            li {
+                cursor: pointer;
+                padding: 10px 30px;
+                transition: all 0.3s linear;
+                border-radius: 10px;
+                &:hover {
+                    background: #ffd5ce; 
+                    a {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+    .right-header {
+        @include red-background();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .search {
+            cursor: pointer;
+            padding: 15px;
+            p {
+                margin: 0;
+                font-size: 30px;
+            }
+        }
+    }
+}
+.content {
+    margin-top: 20px;
+    .content-wrapper {
+        @extend %content;
+        .content-left {
+            border-radius: 10px;
+            transition: all 0.3s linear;
+            @include content-pad(10px, 40px);
+            &:hover {
+                background: #ffc73c;
+                transform: scale(1.01);
+            }
+        }
+        .content-right {
+            @include content-pad(60px, 20px);
+            background: #ffb1ff;
+            .content-top {
+                @extend %content-right-animation;
+                &:hover {
+                    background: #b25fb2;
+                    color: #fff;
+                }
+            }
+            .content-bottom {
+                @extend %content-right-animation;
+                &:hover {
+                    background: #aea8ff;
+                }
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+footer {
+    margin-top: 30px;
+    .footer-wrapper {
+        .footer-card {
+            transition: all 0.3s linear;
+            transform: rotate(5deg);
+            &:hover {
+                transform: rotate(0);
+            }
+        }
+        .left-footer {
+            @include blue-background();
+            @extend %padding-footer-blocks;
+        }
+        .middle-footer {
+            @include blue-background();
+            @extend %padding-footer-blocks;
+        }
+        .right-footer {
+            @include blue-background();
+            @extend %padding-footer-blocks;
+        }
+    }
+}

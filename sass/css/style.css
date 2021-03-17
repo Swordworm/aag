@@ -1,0 +1,78 @@
+footer .footer-wrapper .left-footer, footer .footer-wrapper .middle-footer, footer .footer-wrapper .right-footer {
+  padding: 15px 30px; }
+
+.content .content-wrapper {
+  background: #ffe4a1;
+  font-size: 21px; }
+
+.content .content-wrapper .content-right .content-top, .content .content-wrapper .content-right .content-bottom {
+  transition: all 0.3s linear;
+  border-radius: 10px;
+  padding: 10px 10px; }
+
+a:link, a:visited, a:hover, a:active {
+  color: #919191;
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; }
+
+.header-wrapper .left-header {
+  background: #ffad9e; }
+  .header-wrapper .left-header .menu li {
+    cursor: pointer;
+    padding: 10px 30px;
+    transition: all 0.3s linear;
+    border-radius: 10px; }
+    .header-wrapper .left-header .menu li:hover {
+      background: #ffd5ce; }
+      .header-wrapper .left-header .menu li:hover a {
+        color: #000000; }
+
+.header-wrapper .right-header {
+  background: #ffad9e;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header-wrapper .right-header .search {
+    cursor: pointer;
+    padding: 15px; }
+    .header-wrapper .right-header .search p {
+      margin: 0;
+      font-size: 30px; }
+
+.content {
+  margin-top: 20px; }
+  .content .content-wrapper .content-left {
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    padding: 10px 40px; }
+    .content .content-wrapper .content-left:hover {
+      background: #ffc73c;
+      transform: scale(1.01); }
+  .content .content-wrapper .content-right {
+    padding: 60px 20px;
+    background: #ffb1ff; }
+    .content .content-wrapper .content-right .content-top:hover {
+      background: #b25fb2;
+      color: #fff; }
+    .content .content-wrapper .content-right .content-bottom:hover {
+      background: #aea8ff; }
+    .content .content-wrapper .content-right p {
+      font-size: 16px; }
+
+footer {
+  margin-top: 30px; }
+  footer .footer-wrapper .footer-card {
+    transition: all 0.3s linear;
+    transform: rotate(5deg); }
+    footer .footer-wrapper .footer-card:hover {
+      transform: rotate(0); }
+  footer .footer-wrapper .left-footer {
+    background: #83eaff; }
+  footer .footer-wrapper .middle-footer {
+    background: #83eaff; }
+  footer .footer-wrapper .right-footer {
+    background: #83eaff; }
